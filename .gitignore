@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+data/
+
+# Laporan, slide, dan script pembuatnya tidak dipublikasikan.
+laporan/
+# Berkas di luar proyek ini.
+Algoritma_Klasifikasi_Naive_Bayes.docx
+Rancangan_Preprocessing_Fitur_Teks.docx
+stop-slop-skill.md
+node_modules/
+.~lock.*#

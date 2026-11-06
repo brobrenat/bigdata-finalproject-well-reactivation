@@ -1,0 +1,145 @@
+{
+  "library": "Spark MLlib (pyspark.ml)",
+  "models": {
+    "logistic_regression": {
+      "n": 6703,
+      "positive_rate": 0.3088,
+      "roc_auc": 0.6793,
+      "pr_auc": 0.4987,
+      "log_loss": 0.5777,
+      "brier": 0.1959,
+      "accuracy": 0.7001,
+      "precision": 0.5261,
+      "recall": 0.2918,
+      "f1": 0.3754,
+      "best_f1": 0.5263,
+      "best_f1_threshold": 0.2608,
+      "confusion": [
+        [
+          4089,
+          544
+        ],
+        [
+          1466,
+          604
+        ]
+      ],
+      "precision_at_100": 0.91,
+      "precision_at_500": 0.606,
+      "precision_top10pct": 0.5716,
+      "lift_top10pct": 1.851,
+      "train_seconds": 28.4,
+      "params": {
+        "regParam": 0.0
+      },
+      "spark_auc_check": 0.6793
+    },
+    "random_forest": {
+      "n": 6703,
+      "positive_rate": 0.3088,
+      "roc_auc": 0.7026,
+      "pr_auc": 0.5184,
+      "log_loss": 0.5623,
+      "brier": 0.1906,
+      "accuracy": 0.7082,
+      "precision": 0.5744,
+      "recall": 0.2126,
+      "f1": 0.3103,
+      "best_f1": 0.5407,
+      "best_f1_threshold": 0.2933,
+      "confusion": [
+        [
+          4307,
+          326
+        ],
+        [
+          1630,
+          440
+        ]
+      ],
+      "precision_at_100": 0.92,
+      "precision_at_500": 0.628,
+      "precision_top10pct": 0.594,
+      "lift_top10pct": 1.924,
+      "train_seconds": 148.1,
+      "params": {},
+      "spark_auc_check": 0.7026
+    },
+    "gbt": {
+      "n": 6703,
+      "positive_rate": 0.3088,
+      "roc_auc": 0.6975,
+      "pr_auc": 0.5114,
+      "log_loss": 0.5857,
+      "brier": 0.2004,
+      "accuracy": 0.6878,
+      "precision": 0.493,
+      "recall": 0.3918,
+      "f1": 0.4366,
+      "best_f1": 0.5348,
+      "best_f1_threshold": 0.2618,
+      "confusion": [
+        [
+          3799,
+          834
+        ],
+        [
+          1259,
+          811
+        ]
+      ],
+      "precision_at_100": 0.92,
+      "precision_at_500": 0.636,
+      "precision_top10pct": 0.5836,
+      "lift_top10pct": 1.89,
+      "train_seconds": 163.8,
+      "params": {
+        "maxDepth": 6,
+        "maxIter": 120
+      },
+      "spark_auc_check": 0.6975
+    }
+  },
+  "ablation_no_graph": {
+    "n": 6703,
+    "positive_rate": 0.3088,
+    "roc_auc": 0.6695,
+    "pr_auc": 0.4781,
+    "log_loss": 0.6169,
+    "brier": 0.2093,
+    "accuracy": 0.6918,
+    "precision": 0.5013,
+    "recall": 0.3667,
+    "f1": 0.4235,
+    "best_f1": 0.5159,
+    "best_f1_threshold": 0.2252,
+    "confusion": [
+      [
+        3878,
+        755
+      ],
+      [
+        1311,
+        759
+      ]
+    ],
+    "precision_at_100": 0.67,
+    "precision_at_500": 0.612,
+    "precision_top10pct": 0.5776,
+    "lift_top10pct": 1.87,
+    "train_seconds": 55.9
+  },
+  "regression_gbt": {
+    "n": 1132,
+    "rmse_log": 1.4473,
+    "mae_log": 1.1171,
+    "r2_log": 0.3405,
+    "mae_m3": 47.02,
+    "median_ae_m3": 7.84,
+    "baseline_rmse_log": 1.4899,
+    "baseline_r2_log": 0.3011,
+    "baseline_mae_m3": 48.28,
+    "train_rows": 4426,
+    "train_seconds": 24.9
+  }
+}

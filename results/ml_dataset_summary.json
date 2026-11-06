@@ -1,0 +1,21 @@
+{
+  "spells_by_label": {
+    "positive": 9797,
+    "negative": 24998,
+    "censored": 10629
+  },
+  "rows": 34795,
+  "cutoff_decision_month": "2024-12",
+  "decision_range": [
+    "2022-07",
+    "2025-07"
+  ],
+  "by_split_label": {
+    "test_0": 4633,
+    "test_1": 2070,
+    "train_0": 20365,
+    "train_1": 7727
+  },
+  "regression_rows": 5558,
+  "top_operators": 30
+}

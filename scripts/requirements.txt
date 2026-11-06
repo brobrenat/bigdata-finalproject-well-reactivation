@@ -1,0 +1,6 @@
+# Dependensi dashboard saja (Streamlit Community Cloud membaca file ini karena
+# letaknya sefolder dengan 07_dashboard.py). Tanpa PySpark/Java.
+streamlit==1.36.0
+pandas==2.2.2
+pyarrow==16.1.0
+pydeck==0.9.1

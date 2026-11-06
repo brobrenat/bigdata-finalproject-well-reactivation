@@ -1,0 +1,113 @@
+{
+  "library": "scikit-learn (tanpa Spark)",
+  "models": {
+    "logistic_regression": {
+      "n": 6703,
+      "positive_rate": 0.3088,
+      "roc_auc": 0.6802,
+      "pr_auc": 0.4988,
+      "log_loss": 0.5773,
+      "brier": 0.1957,
+      "accuracy": 0.6988,
+      "precision": 0.5224,
+      "recall": 0.2874,
+      "f1": 0.3708,
+      "best_f1": 0.5265,
+      "best_f1_threshold": 0.2504,
+      "confusion": [
+        [
+          4089,
+          544
+        ],
+        [
+          1475,
+          595
+        ]
+      ],
+      "precision_at_100": 0.91,
+      "precision_at_500": 0.598,
+      "precision_top10pct": 0.5791,
+      "lift_top10pct": 1.875,
+      "train_seconds": 46.9,
+      "params": {
+        "C": 1.0
+      }
+    },
+    "random_forest": {
+      "n": 6703,
+      "positive_rate": 0.3088,
+      "roc_auc": 0.7154,
+      "pr_auc": 0.5272,
+      "log_loss": 0.5548,
+      "brier": 0.1878,
+      "accuracy": 0.7085,
+      "precision": 0.579,
+      "recall": 0.2053,
+      "f1": 0.3031,
+      "best_f1": 0.5519,
+      "best_f1_threshold": 0.3054,
+      "confusion": [
+        [
+          4324,
+          309
+        ],
+        [
+          1645,
+          425
+        ]
+      ],
+      "precision_at_100": 0.91,
+      "precision_at_500": 0.64,
+      "precision_top10pct": 0.5851,
+      "lift_top10pct": 1.895,
+      "train_seconds": 3.0,
+      "params": {}
+    },
+    "hist_gbt": {
+      "n": 6703,
+      "positive_rate": 0.3088,
+      "roc_auc": 0.7147,
+      "pr_auc": 0.542,
+      "log_loss": 0.5563,
+      "brier": 0.1884,
+      "accuracy": 0.7045,
+      "precision": 0.5316,
+      "recall": 0.3618,
+      "f1": 0.4306,
+      "best_f1": 0.5511,
+      "best_f1_threshold": 0.3316,
+      "confusion": [
+        [
+          3973,
+          660
+        ],
+        [
+          1321,
+          749
+        ]
+      ],
+      "precision_at_100": 0.93,
+      "precision_at_500": 0.702,
+      "precision_top10pct": 0.6209,
+      "lift_top10pct": 2.011,
+      "train_seconds": 3.2,
+      "params": {
+        "max_depth": 6,
+        "max_iter": 120
+      }
+    }
+  },
+  "regression_hgb": {
+    "n": 1132,
+    "rmse_log": 1.3479,
+    "mae_log": 1.0345,
+    "r2_log": 0.428,
+    "mae_m3": 45.31,
+    "median_ae_m3": 6.99,
+    "baseline_rmse_log": 1.4899,
+    "baseline_r2_log": 0.3011,
+    "baseline_mae_m3": 48.28,
+    "train_rows": 4426,
+    "train_seconds": 0.3
+  }
+}

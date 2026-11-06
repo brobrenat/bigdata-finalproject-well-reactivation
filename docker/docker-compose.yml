@@ -1,0 +1,67 @@
+# Cluster Spark untuk pipeline sumur idle.
+#
+# Dipakai supaya Java dan PySpark tidak perlu dipasang di host. Semuanya ada
+# di dalam image.
+#
+# Image resmi Apache dipakai, bukan Bitnami, karena distribusi image Bitnami
+# sudah berubah dan berisiko tidak bisa ditarik lagi.
+#
+# Jalankan:
+#   docker compose -f docker/docker-compose.yml up -d
+#
+# Antarmuka web: Spark master http://localhost:8080
+
+x-spark-common: &spark-common
+  image: apache/spark:3.5.3
+  user: "1001:1001"
+  volumes:
+    # Kode proyek. Read only supaya container tidak bisa mengubah sumbernya.
+    - ../:/app:ro
+    # Data. Ini yang ditulis, jadi tidak read only.
+    - ${BIGDATA_DATA_ROOT:-/home/brainard/bigdata-data}:/data
+  environment:
+    # Di dalam container, data root selalu /data.
+    BIGDATA_DATA_ROOT: /data
+    PYTHONPATH: /app
+    PYSPARK_PYTHON: python3
+    PYSPARK_DRIVER_PYTHON: python3
+  working_dir: /app
+
+services:
+  spark-master:
+    <<: *spark-common
+    container_name: spark-master
+    command: >
+      /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
+      --host spark-master --port 7077 --webui-port 8080
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    # Cek port pakai builtin bash, karena curl belum pasti ada di dalam image.
+    healthcheck:
+      test: ["CMD-SHELL", "timeout 3 bash -c '</dev/tcp/localhost/7077' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 20s
+
+  spark-worker:
+    <<: *spark-common
+    container_name: spark-worker
+    command: >
+      /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker
+      spark://spark-master:7077 --webui-port 8081
+    ports:
+      - "8081:8081"
+    depends_on:
+      spark-master:
+        condition: service_healthy
+    environment:
+      BIGDATA_DATA_ROOT: /data
+      PYTHONPATH: /app
+      PYSPARK_PYTHON: python3
+      PYSPARK_DRIVER_PYTHON: python3
+      # RAM WSL hanya sekitar 7,7 GB, jadi worker dibatasi agar driver dan
+      # sistem masih punya ruang.
+      SPARK_WORKER_MEMORY: 3g
+      SPARK_WORKER_CORES: 4

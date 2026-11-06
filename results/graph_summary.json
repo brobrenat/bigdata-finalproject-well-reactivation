@@ -1,0 +1,103 @@
+{
+  "edges_facility": 205109,
+  "nodes_facility": 42859,
+  "facilities_with_wells": 27222,
+  "wells": 212953,
+  "wcc": 172,
+  "largest_wcc_nodes": 29015,
+  "largest_wcc_share": 0.677,
+  "communities": 301,
+  "modularity": 0.9238,
+  "density": 0.0001116633834444958,
+  "avg_degree": 9.571,
+  "type_counts": {
+    "BT": 39004,
+    "IF": 3533,
+    "GS": 3050,
+    "GP": 572,
+    "MS": 481,
+    "WS": 249,
+    "TM": 181,
+    "WT": 151,
+    "CT": 122,
+    "WP": 122,
+    "PL": 44,
+    "OS": 8
+  },
+  "pagerank_compare": {
+    "spearman": 0.99992,
+    "max_abs_diff": 0.0010260407490122483,
+    "top20_overlap": 16
+  },
+  "seconds": {
+    "spark_aggregation": 63.4,
+    "networkx_analysis": 60.4,
+    "spark_pagerank": 54.9
+  },
+  "restart_by_battery_size": [
+    {
+      "battery_size": "1-5",
+      "count": 9425,
+      "mean": 0.28679045092838196
+    },
+    {
+      "battery_size": "6-20",
+      "count": 5035,
+      "mean": 0.3183714001986097
+    },
+    {
+      "battery_size": "21-100",
+      "count": 8636,
+      "mean": 0.3298981009726725
+    },
+    {
+      "battery_size": "101-500",
+      "count": 7713,
+      "mean": 0.2395954881369117
+    },
+    {
+      "battery_size": ">500",
+      "count": 3986,
+      "mean": 0.19919719016557952
+    }
+  ],
+  "restart_by_downstream_pr": [
+    {
+      "downstream_pr_q": "Q1 rendah",
+      "count": 6808,
+      "mean": 0.21650998824911868
+    },
+    {
+      "downstream_pr_q": "Q2",
+      "count": 6807,
+      "mean": 0.22755986484501248
+    },
+    {
+      "downstream_pr_q": "Q3",
+      "count": 6808,
+      "mean": 0.3514982373678026
+    },
+    {
+      "downstream_pr_q": "Q4",
+      "count": 6807,
+      "mean": 0.3409725282797121
+    },
+    {
+      "downstream_pr_q": "Q5 tinggi",
+      "count": 6808,
+      "mean": 0.28378378378378377
+    }
+  ],
+  "restart_by_has_downstream": [
+    {
+      "has_downstream": false,
+      "count": 1072,
+      "mean": 0.19309701492537312
+    },
+    {
+      "has_downstream": true,
+      "count": 33723,
+      "mean": 0.2843756486670818
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1230" viewBox="0 0 1600 1230" font-family="Segoe UI, Arial, sans-serif">
+<defs><marker id="ah" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" viewBox="0 0 10 10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker><filter id="sh" x="-5%" y="-5%" width="110%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.12"/></filter></defs>
+<rect width="1600" height="1230" fill="#ffffff"/>
+<text x="800.0" y="48" text-anchor="middle" font-size="30" font-weight="700" fill="#0f172a">Arsitektur Layer Big Data Pipeline</text>
+<text x="800.0" y="80" text-anchor="middle" font-size="17" fill="#475569">Analisis Sentimen &amp; Deteksi Tren Keluhan Pelanggan Telekomunikasi (Lambda: Batch + Streaming)</text>
+<rect x="30" y="110" width="1310" height="180" rx="14" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+<rect x="30" y="110" width="200" height="180" rx="14" fill="#2563eb"/>
+<rect x="200" y="110" width="30" height="180" fill="#2563eb"/>
+<text x="130" y="172" text-anchor="middle" font-size="16" fill="#ffffff" opacity="0.85">LAYER 1</text>
+<text x="130" y="208" text-anchor="middle" font-size="27" font-weight="700" fill="#ffffff">CAPTURE</text>
+<text x="130" y="238" text-anchor="middle" font-size="15" fill="#ffffff" opacity="0.9">Sumber Data</text>
+<rect x="250.0" y="130" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="250.0" y="130" width="249.0" height="6" rx="3" fill="#2563eb"/>
+<text x="374.5" y="180" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Media Sosial</text>
+<text x="374.5" y="214" text-anchor="middle" font-size="14.5" fill="#334155">X / Twitter, Instagram,</text>
+<text x="374.5" y="238" text-anchor="middle" font-size="14.5" fill="#334155">Facebook, TikTok</text>
+<rect x="527.0" y="130" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="527.0" y="130" width="249.0" height="6" rx="3" fill="#2563eb"/>
+<text x="651.5" y="180" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Aplikasi Layanan Pelanggan</text>
+<text x="651.5" y="214" text-anchor="middle" font-size="14.5" fill="#334155">Live chat in-app,</text>
+<text x="651.5" y="238" text-anchor="middle" font-size="14.5" fill="#334155">WhatsApp Business</text>
+<rect x="804.0" y="130" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="804.0" y="130" width="249.0" height="6" rx="3" fill="#2563eb"/>
+<text x="928.5" y="180" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Ulasan Aplikasi</text>
+<text x="928.5" y="214" text-anchor="middle" font-size="14.5" fill="#334155">Google Play Store,</text>
+<text x="928.5" y="238" text-anchor="middle" font-size="14.5" fill="#334155">Apple App Store</text>
+<rect x="1081.0" y="130" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="1081.0" y="130" width="249.0" height="6" rx="3" fill="#2563eb"/>
+<text x="1205.5" y="180" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Pusat Pengaduan</text>
+<text x="1205.5" y="214" text-anchor="middle" font-size="14.5" fill="#334155">Tiket call center,</text>
+<text x="1205.5" y="238" text-anchor="middle" font-size="14.5" fill="#334155">email, transkrip</text>
+<line x1="790.0" y1="292" x2="790.0" y2="320" stroke="#475569" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="804.0" y="312.0" font-size="13.5" font-style="italic" fill="#475569">API / HTTP stream · Dump database · File export</text>
+<rect x="30" y="324" width="1310" height="180" rx="14" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+<rect x="30" y="324" width="200" height="180" rx="14" fill="#7c3aed"/>
+<rect x="200" y="324" width="30" height="180" fill="#7c3aed"/>
+<text x="130" y="386" text-anchor="middle" font-size="16" fill="#ffffff" opacity="0.85">LAYER 2</text>
+<text x="130" y="422" text-anchor="middle" font-size="27" font-weight="700" fill="#ffffff">INGEST</text>
+<text x="130" y="452" text-anchor="middle" font-size="15" fill="#ffffff" opacity="0.9">Pengumpulan Data</text>
+<rect x="250.0" y="344" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="250.0" y="344" width="249.0" height="6" rx="3" fill="#7c3aed"/>
+<text x="374.5" y="394" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Streaming: Apache Flume</text>
+<text x="374.5" y="428" text-anchor="middle" font-size="14.5" fill="#334155">source media sosial/HTTP</text>
+<text x="374.5" y="452" text-anchor="middle" font-size="14.5" fill="#334155">→ channel → HDFS sink</text>
+<rect x="527.0" y="344" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="527.0" y="344" width="249.0" height="6" rx="3" fill="#7c3aed"/>
+<text x="651.5" y="394" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Batch: Apache Sqoop</text>
+<text x="651.5" y="428" text-anchor="middle" font-size="14.5" fill="#334155">impor DB tiket &amp; CS</text>
+<text x="651.5" y="452" text-anchor="middle" font-size="14.5" fill="#334155">(MySQL/Oracle) → HDFS</text>
+<rect x="804.0" y="344" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="804.0" y="344" width="249.0" height="6" rx="3" fill="#7c3aed"/>
+<text x="928.5" y="394" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Spark Streaming</text>
+<text x="928.5" y="428" text-anchor="middle" font-size="14.5" fill="#334155">micro-batch dari Flume:</text>
+<text x="928.5" y="452" text-anchor="middle" font-size="14.5" fill="#334155">validasi, dedup, metadata</text>
+<rect x="1081.0" y="344" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="1081.0" y="344" width="249.0" height="6" rx="3" fill="#7c3aed"/>
+<text x="1205.5" y="394" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">HDFS Put / WebHDFS</text>
+<text x="1205.5" y="428" text-anchor="middle" font-size="14.5" fill="#334155">upload file ulasan &amp;</text>
+<text x="1205.5" y="452" text-anchor="middle" font-size="14.5" fill="#334155">data historis (CSV/JSON)</text>
+<line x1="790.0" y1="506" x2="790.0" y2="534" stroke="#475569" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="804.0" y="526.0" font-size="13.5" font-style="italic" fill="#475569">Ditulis ke HDFS (Bronze) apa adanya</text>
+<rect x="30" y="538" width="1310" height="180" rx="14" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+<rect x="30" y="538" width="200" height="180" rx="14" fill="#0d9488"/>
+<rect x="200" y="538" width="30" height="180" fill="#0d9488"/>
+<text x="130" y="600" text-anchor="middle" font-size="16" fill="#ffffff" opacity="0.85">LAYER 3</text>
+<text x="130" y="636" text-anchor="middle" font-size="27" font-weight="700" fill="#ffffff">STORE</text>
+<text x="130" y="666" text-anchor="middle" font-size="15" fill="#ffffff" opacity="0.9">Penyimpanan</text>
+<rect x="250.0" y="558" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#0d9488" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="250.0" y="558" width="249.0" height="6" rx="3" fill="#0d9488"/>
+<text x="374.5" y="608" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Bronze (Raw)</text>
+<text x="374.5" y="642" text-anchor="middle" font-size="14.5" fill="#334155">Data Lake HDFS / S3</text>
+<text x="374.5" y="666" text-anchor="middle" font-size="14.5" fill="#334155">komentar mentah, Parquet</text>
+<line x1="502.0" y1="628.0" x2="524.0" y2="628.0" stroke="#475569" stroke-width="2.2" marker-end="url(#ah)"/>
+<rect x="527.0" y="558" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#0d9488" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="527.0" y="558" width="249.0" height="6" rx="3" fill="#0d9488"/>
+<text x="651.5" y="608" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Silver (Clean)</text>
+<text x="651.5" y="642" text-anchor="middle" font-size="14.5" fill="#334155">teks bersih, normalisasi,</text>
+<text x="651.5" y="666" text-anchor="middle" font-size="14.5" fill="#334155">fitur TF-IDF</text>
+<line x1="779.0" y1="628.0" x2="801.0" y2="628.0" stroke="#475569" stroke-width="2.2" marker-end="url(#ah)"/>
+<rect x="804.0" y="558" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#0d9488" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="804.0" y="558" width="249.0" height="6" rx="3" fill="#0d9488"/>
+<text x="928.5" y="608" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Gold (Prediksi)</text>
+<text x="928.5" y="642" text-anchor="middle" font-size="14.5" fill="#334155">label sentimen &amp;</text>
+<text x="928.5" y="666" text-anchor="middle" font-size="14.5" fill="#334155">kategori per komentar</text>
+<line x1="1056.0" y1="628.0" x2="1078.0" y2="628.0" stroke="#475569" stroke-width="2.2" marker-end="url(#ah)"/>
+<rect x="1081.0" y="558" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#0d9488" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="1081.0" y="558" width="249.0" height="6" rx="3" fill="#0d9488"/>
+<text x="1205.5" y="608" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Data Warehouse</text>
+<text x="1205.5" y="642" text-anchor="middle" font-size="14.5" fill="#334155">Hive / BigQuery: agregat</text>
+<text x="1205.5" y="666" text-anchor="middle" font-size="14.5" fill="#334155">jam × wilayah × kategori</text>
+<line x1="790.0" y1="720" x2="790.0" y2="748" stroke="#475569" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="804.0" y="740.0" font-size="13.5" font-style="italic" fill="#475569">Spark membaca/menulis data lake (batch &amp; streaming)</text>
+<rect x="30" y="752" width="1310" height="180" rx="14" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+<rect x="30" y="752" width="200" height="180" rx="14" fill="#ea580c"/>
+<rect x="200" y="752" width="30" height="180" fill="#ea580c"/>
+<text x="130" y="814" text-anchor="middle" font-size="16" fill="#ffffff" opacity="0.85">LAYER 4</text>
+<text x="130" y="850" text-anchor="middle" font-size="27" font-weight="700" fill="#ffffff">COMPUTE</text>
+<text x="130" y="880" text-anchor="middle" font-size="15" fill="#ffffff" opacity="0.9">Pemrosesan &amp; ML</text>
+<rect x="250.0" y="772" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#ea580c" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="250.0" y="772" width="249.0" height="6" rx="3" fill="#ea580c"/>
+<text x="374.5" y="822" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Preprocessing Teks</text>
+<text x="374.5" y="856" text-anchor="middle" font-size="14.5" fill="#334155">case folding, hapus URL/emoji,</text>
+<text x="374.5" y="880" text-anchor="middle" font-size="14.5" fill="#334155">normalisasi slang, stemming</text>
+<line x1="502.0" y1="842.0" x2="524.0" y2="842.0" stroke="#475569" stroke-width="2.2" marker-end="url(#ah)"/>
+<rect x="527.0" y="772" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#ea580c" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="527.0" y="772" width="249.0" height="6" rx="3" fill="#ea580c"/>
+<text x="651.5" y="822" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Ekstraksi Fitur</text>
+<text x="651.5" y="856" text-anchor="middle" font-size="14.5" fill="#334155">Tokenizer → HashingTF</text>
+<text x="651.5" y="880" text-anchor="middle" font-size="14.5" fill="#334155">→ IDF, n-gram</text>
+<line x1="779.0" y1="842.0" x2="801.0" y2="842.0" stroke="#475569" stroke-width="2.2" marker-end="url(#ah)"/>
+<rect x="804.0" y="772" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#ea580c" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="804.0" y="772" width="249.0" height="6" rx="3" fill="#ea580c"/>
+<text x="928.5" y="822" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Spark MLlib</text>
+<text x="928.5" y="856" text-anchor="middle" font-size="14.5" fill="#334155">Sentimen: Pos/Net/Neg</text>
+<text x="928.5" y="880" text-anchor="middle" font-size="14.5" fill="#334155">Kategori: Jaringan, Tagihan, ...</text>
+<line x1="1056.0" y1="842.0" x2="1078.0" y2="842.0" stroke="#475569" stroke-width="2.2" marker-end="url(#ah)"/>
+<rect x="1081.0" y="772" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#ea580c" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="1081.0" y="772" width="249.0" height="6" rx="3" fill="#ea580c"/>
+<text x="1205.5" y="822" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Agregasi &amp; Deteksi Lonjakan</text>
+<text x="1205.5" y="856" text-anchor="middle" font-size="14.5" fill="#334155">window per jam / wilayah,</text>
+<text x="1205.5" y="880" text-anchor="middle" font-size="14.5" fill="#334155">baseline 7 hari + threshold</text>
+<line x1="790.0" y1="934" x2="790.0" y2="962" stroke="#475569" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="804.0" y="954.0" font-size="13.5" font-style="italic" fill="#475569">Hasil agregat &amp; event alert</text>
+<rect x="30" y="966" width="1310" height="180" rx="14" fill="#fdf2f8" stroke="#db2777" stroke-width="2"/>
+<rect x="30" y="966" width="200" height="180" rx="14" fill="#db2777"/>
+<rect x="200" y="966" width="30" height="180" fill="#db2777"/>
+<text x="130" y="1028" text-anchor="middle" font-size="16" fill="#ffffff" opacity="0.85">LAYER 5</text>
+<text x="130" y="1064" text-anchor="middle" font-size="27" font-weight="700" fill="#ffffff">USE</text>
+<text x="130" y="1094" text-anchor="middle" font-size="15" fill="#ffffff" opacity="0.9">Pemanfaatan</text>
+<rect x="250.0" y="986" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#db2777" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="250.0" y="986" width="249.0" height="6" rx="3" fill="#db2777"/>
+<text x="374.5" y="1036" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Dashboard Interaktif</text>
+<text x="374.5" y="1070" text-anchor="middle" font-size="14.5" fill="#334155">Superset / Power BI:</text>
+<text x="374.5" y="1094" text-anchor="middle" font-size="14.5" fill="#334155">tren, kategori, heatmap</text>
+<rect x="527.0" y="986" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#db2777" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="527.0" y="986" width="249.0" height="6" rx="3" fill="#db2777"/>
+<text x="651.5" y="1036" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Notifikasi Real-time</text>
+<text x="651.5" y="1070" text-anchor="middle" font-size="14.5" fill="#334155">Slack / Telegram / Email</text>
+<text x="651.5" y="1094" text-anchor="middle" font-size="14.5" fill="#334155">ke tim NOC</text>
+<rect x="804.0" y="986" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#db2777" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="804.0" y="986" width="249.0" height="6" rx="3" fill="#db2777"/>
+<text x="928.5" y="1036" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Laporan Manajemen</text>
+<text x="928.5" y="1070" text-anchor="middle" font-size="14.5" fill="#334155">ringkasan harian &amp;</text>
+<text x="928.5" y="1094" text-anchor="middle" font-size="14.5" fill="#334155">mingguan otomatis</text>
+<rect x="1081.0" y="986" width="249.0" height="140" rx="10" fill="#ffffff" stroke="#db2777" stroke-width="1.5" filter="url(#sh)"/>
+<rect x="1081.0" y="986" width="249.0" height="6" rx="3" fill="#db2777"/>
+<text x="1205.5" y="1036" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Integrasi Tiket</text>
+<text x="1205.5" y="1070" text-anchor="middle" font-size="14.5" fill="#334155">eskalasi otomatis ke</text>
+<text x="1205.5" y="1094" text-anchor="middle" font-size="14.5" fill="#334155">tim operasional jaringan</text>
+<rect x="1370" y="110" width="200" height="1036" rx="14" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1470.0" y="144" text-anchor="middle" font-size="17" font-weight="700" fill="#334155">LINTAS LAYER</text>
+<rect x="1384" y="165.0" width="172" height="302.0" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="1.5" filter="url(#sh)"/>
+<text x="1470.0" y="205.0" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Orkestrasi</text>
+<text x="1470.0" y="241.0" text-anchor="middle" font-size="14" fill="#334155">Apache Airflow</text>
+<text x="1470.0" y="265.0" text-anchor="middle" font-size="14" fill="#334155">jadwal batch &amp;</text>
+<text x="1470.0" y="289.0" text-anchor="middle" font-size="14" fill="#334155">retraining model</text>
+<rect x="1384" y="487.0" width="172" height="302.0" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="1.5" filter="url(#sh)"/>
+<text x="1470.0" y="527.0" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Monitoring</text>
+<text x="1470.0" y="563.0" text-anchor="middle" font-size="14" fill="#334155">Prometheus + Grafana</text>
+<text x="1470.0" y="587.0" text-anchor="middle" font-size="14" fill="#334155">latensi, antrean Flume,</text>
+<text x="1470.0" y="611.0" text-anchor="middle" font-size="14" fill="#334155">drift model</text>
+<rect x="1384" y="809.0" width="172" height="302.0" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="1.5" filter="url(#sh)"/>
+<text x="1470.0" y="849.0" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Keamanan</text>
+<text x="1470.0" y="885.0" text-anchor="middle" font-size="14" fill="#334155">Tata Kelola Data:</text>
+<text x="1470.0" y="909.0" text-anchor="middle" font-size="14" fill="#334155">hash ID pelanggan,</text>
+<text x="1470.0" y="933.0" text-anchor="middle" font-size="14" fill="#334155">enkripsi, RBAC</text>
+<line x1="1342" y1="200.0" x2="1368" y2="200.0" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4"/>
+<line x1="1342" y1="414.0" x2="1368" y2="414.0" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4"/>
+<line x1="1342" y1="628.0" x2="1368" y2="628.0" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4"/>
+<line x1="1342" y1="842.0" x2="1368" y2="842.0" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4"/>
+<line x1="1342" y1="1056.0" x2="1368" y2="1056.0" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="800.0" y="1208" text-anchor="middle" font-size="14" fill="#64748b">Jalur batch: data historis &amp; retraining model  ·  Jalur streaming: Flume → Spark Streaming → prediksi &amp; alert hampir real-time</text>
+</svg>
