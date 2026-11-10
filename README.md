@@ -197,7 +197,7 @@ ubah sasaran prediksi menjadi memperkirakan sumur mana yang akan menjadi
 idle, atau memperkirakan sisa cadangan dari decline curve. Keduanya
 menjawab rumusan masalah yang sama dan memakai pipeline yang persis sama.
 
-## Assignment II: machine learning dan graph analytics
+## Machine learning dan graph analytics
 
 Tahap ini dijalankan dalam mode Spark lokal, tanpa Docker. Prasyarat: JRE 17
 di `~/opt` dan virtualenv `~/bigdata-venv` berisi paket di `requirements.txt`.
